@@ -46,7 +46,9 @@ console.log( axios )
 
 axios.get("https://leonardoapi.onrender.com/songs")
     .then( (res) => {
+
         res.data.songs.map((song) => {
+            
             document.write(song.title)
         })
     })
