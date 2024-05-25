@@ -6,6 +6,8 @@
     --color-mblack: #202022;
     --color-white: #f2f2f2;
     --color-black: #1e1e1e;
+    --color-blackdeg1: #202022;
+    --color-blackdeg2: #111111;
 }
 
 * {
@@ -22,4 +24,24 @@
 h2 {
     font-size: 32px;
     font-weight: 700;
+    color: var(--color-white);
 }
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+img {
+    width: 100px;
+}
+
+.header_navbar {
+    background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2))
+}
+
+.header_navbar_menu {
+    
+}
+

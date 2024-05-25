@@ -40,7 +40,7 @@ const validateNumber = (num) => {
 }
 }
 
-console.log(validateNumber(10)) **/
+console.log(validateNumber(10)) 
 
 console.log( axios )
 
@@ -52,3 +52,5 @@ axios.get("https://leonardoapi.onrender.com/songs")
             document.write(song.title)
         })
     })
+
+    **/
