@@ -38,10 +38,65 @@ img {
 }
 
 .header_navbar {
-    background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2))
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2));
+    height: 110px;
+    padding: 20px;
 }
 
 .header_navbar_menu {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.header_navbar_menu img.logo {
+    height: 65px;
+    width: 45px;
+}
+
+.header_navbar_menu button {
+    background-image: url("/Assets/svg/menu.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 59px;
+    width: 59px;
+    border: solid 1px transparent;
+}
+
+.header_navbar__bar {
+    border: solid 3px var(--color-lighgreen);
+    padding: 9px 17px;
+    color: var(--color-white);
+    background-color: transparent;
+    height: 51px;
+    width: 650px;
+    border-radius: 25px;
+}
+
+.header_navbar__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_navbar__form button {
+    background-image: url("/Assets/svg/search.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: var(--color-lighgreen);
+    height: 33px;
+    width: 33px;
+    border: solid 1px transparent;
+    transform: translateX(-45px);
+}
+
+
+
+
 
