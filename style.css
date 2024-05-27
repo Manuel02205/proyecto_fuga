@@ -10,6 +10,10 @@
     --color-blackdeg2: #111111;
 }
 
+body {
+    background-color: #111111;
+}
+
 * {
     font-size: 19px;
     font-family: "Inter", sans-serif;
@@ -104,10 +108,63 @@ img {
     width: 56px;
 }
 
-.main {
-    background-color: #111111;
+.main__nav__home {
+    background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2));
 }
 
+.main__nav__home__elements {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.main__nav__home__elements img {
+    height: 33px;
+}
 
+.main__nav__library {
+    background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2));
+}
+
+.main__nav__library__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__nav__library__title {
+    display: flex;
+    align-items: center;
+}
+
+.main__nav__library__title img {
+    height: 33px;
+}
+
+.main__nav__library__header button {
+    background-image: url("Assets/svg/search.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: solid 1px transparent;
+    height: 33px;
+    width: 33px;
+}
+
+.main__main__nav {
+    background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2));
+}
+
+.main__main__nav__buttonbar {
+    display: flex;
+    gap: 26px;
+}
+
+.main__main__nav__buttonbar button {
+    background-color: var(--color-lightgray);
+    color: var(--color-mblack);
+    border: solid 1px transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
 
