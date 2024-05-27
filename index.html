@@ -140,33 +140,37 @@
     </main>
 
     <footer>
-        <nav>
-            <div>
+        <nav class="playbar__nav">
+            <div class="playbar__nav__song">
                 <img src="/Assets/img/telepatia.jpg" alt="Song cover">
-                <div>
+                <div class="card__text">
                     <p>Telepatia</p>
                     <p>Kali Uchis</p>
                 </div>
                 <button></button>
             </div>
-            <div>
-                <div>
+            <div class="playbar__nav__bar">
+                <div class="playbar__nav__bar__bar">
                     <p>0:29</p>
-                    <div></div>
+                    <form action="">
+                        <input type="radio" name="bar" id="bar">
+                    </form>
                     <p>2:50</p>
                 </div>
-                <div>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                <div class="playbar__nav__bar__buttons">
+                    <button class="unlike"></button>
+                    <button class="backward"></button>
+                    <button class="play"></button>
+                    <button class="forward"></button>
+                    <button class="like"></button>
                 </div>
             </div>
-            <div>
-                <button></button>
-                <div></div>
-                <button></button>
+            <div class="playbar__nav__bar__volumen">
+                <button class="playbar__nav__bar__volumen__volumen"></button>
+                <form action="">
+                    <input type="radio" name="volumen" id="volumen">
+                </form>
+                <button class="volumen__options"></button>
             </div>
         </nav>
     </footer>
