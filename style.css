@@ -222,6 +222,13 @@ img {
     cursor: pointer;
 }
 
+#track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 10px 10px 25px;
+}
+
 #track-list img {
     border-radius: 10px;
     transition: box-shadow .3s ease-in, transform .3s ease-in;
