@@ -222,6 +222,14 @@ img {
     cursor: pointer;
 }
 
+#track-list img {
+    border-radius: 10px;
+}
+
+#track-list p {
+    color: var(--color-white);
+}
+
 .main__main__nav {
     background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2));
     display: flex;
@@ -365,6 +373,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 12px;
+    color: var(--color-white);
 }
 
 .playbar__nav__bar__bar input {
@@ -383,8 +392,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border: solid 1px transparent;
     cursor: pointer;
 }
@@ -395,8 +404,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border: solid 1px transparent;
     cursor: pointer;
 }
@@ -407,8 +416,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     border: solid 1px transparent;
     cursor: pointer;
 }
@@ -419,8 +428,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border: solid 1px transparent;
     cursor: pointer;
 }
@@ -431,8 +440,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border: solid 1px transparent;
     cursor: pointer;
 }
@@ -462,8 +471,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border: solid 1px transparent; 
     cursor: pointer;
 }
@@ -474,8 +483,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border: solid 1px transparent;
     cursor: pointer;
 }
