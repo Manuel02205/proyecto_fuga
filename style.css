@@ -224,10 +224,35 @@ img {
 
 #track-list img {
     border-radius: 10px;
+    transition: box-shadow .3s ease-in, transform .3s ease-in;
+    cursor: pointer;
+}
+
+#track-list img:hover {
+    box-shadow: 0px 0px 20px #f2f2f2b1;
+    transform: scale(1.05);
 }
 
 #track-list p {
     color: var(--color-white);
+}
+
+.song {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.song button {
+    background-image: url("Assets/svg/play.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: solid 1px transparent;
+    height: 33px;
+    width: 33px;
+    cursor: pointer;
 }
 
 .main__main__nav {
@@ -243,11 +268,12 @@ img {
     height: 130px;
     border-radius: 10px;
     cursor: pointer;
-    transition: box-shadow .3s ease-in;
+    transition: box-shadow .3s ease-in, transform .3s ease-in;
 }
 
 .main__main__nav img:hover {
     box-shadow: 0px 0px 20px #f2f2f2a6;
+    transform: scale(1.05);
 }
 
 .main__main__nav__buttonbar {
@@ -262,12 +288,13 @@ img {
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color .3s ease-in, color .3s ease-in;
+    transition: background-color .3s ease-in, color .3s ease-in, transform .3s ease-in;
 }
 
 .main__main__nav__buttonbar button:hover {
     background-color: var(--color-darkgreen);
     color: var(--color-white);
+    transform: scale(1.05);
 }
 
 .main__main__nav__cards {
