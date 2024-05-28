@@ -54,3 +54,24 @@ axios.get("https://leonardoapi.onrender.com/songs")
     })
 
     **/
+
+const container = document.getElementById("track-list")
+
+axios.get("https://leonardoapi.onrender.com/songs")
+    .then(  (res)  => {
+
+        res.date.songs.map( (song) => {
+
+            const div = document.createElement("div")
+            div.classList.add("song")
+            div.innerHTML = `
+                <img src="${song.path.front}" alt="">
+                <p>${song.title}</p>
+                <button></button>
+            `
+            container.appendChild(div)
+        }   )
+
+            
+    }   )
+    

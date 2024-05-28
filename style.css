@@ -67,6 +67,11 @@ img {
 .header__navbar__menu img.logo {
     height: 65px;
     width: 45px;
+    transition: filter .3s ease-in-out;
+}
+
+.header__navbar__menu img.logo:hover {
+    filter: drop-shadow(0px 10px 20px #00bcc95b);
 }
 
 .header__navbar__menu button {
@@ -78,6 +83,12 @@ img {
     height: 59px;
     width: 59px;
     border: solid 1px transparent;
+    cursor: pointer;
+    transition: transform .3s ease-in;
+}
+
+.header__navbar__menu button:hover {
+    transform: scale(1.05);
 }
 
 .header__navbar__bar {
@@ -107,6 +118,7 @@ img {
     width: 33px;
     border: solid 1px transparent;
     transform: translateX(-45px);
+    cursor: pointer;
 }
 
 .header__navbar__user {
@@ -114,6 +126,12 @@ img {
     border-radius: 50%;
     height: 56px;
     width: 56px;
+    cursor: pointer;
+    transition: transform .4s ease-in-out;
+}
+
+.header__navbar__user:hover {
+    transform: scale(1.3);
 }
 
 .main {
@@ -148,6 +166,15 @@ img {
     height: 33px;
 }
 
+.main__nav__home__elements h3 {
+    transition: filter .3s ease-in-out;
+    cursor: pointer;
+}
+
+.main__nav__home__elements h3:hover {
+    filter: drop-shadow(0px 5px 10px #f2f2f2a1);
+}
+
 .main__nav__library {
     display: flex;
     flex-direction: column;
@@ -180,6 +207,7 @@ img {
     border: solid 1px transparent;
     height: 33px;
     width: 33px;
+    cursor: pointer;
 }
 
 .main__main__nav {
@@ -194,6 +222,12 @@ img {
 .main__main__nav img {
     height: 130px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow .3s ease-in;
+}
+
+.main__main__nav img:hover {
+    box-shadow: 0px 0px 20px #f2f2f2a6;
 }
 
 .main__main__nav__buttonbar {
@@ -207,6 +241,13 @@ img {
     border: solid 1px transparent;
     border-radius: 20px;
     padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color .3s ease-in, color .3s ease-in;
+}
+
+.main__main__nav__buttonbar button:hover {
+    background-color: var(--color-darkgreen);
+    color: var(--color-white);
 }
 
 .main__main__nav__cards {
@@ -225,6 +266,7 @@ img {
     border: solid 1px transparent;
     height: 33px;
     width: 33px;
+    cursor: pointer;
 }
 
 .container__container__cards {
@@ -271,7 +313,8 @@ img {
 }
 
 .playbar__nav__song img {
-
+    height: 96px;
+    border-radius: 10px;
 }
 
 .playbar__nav__song p {
@@ -287,6 +330,7 @@ img {
     height: 33px;
     width: 33px;
     border: solid 1px transparent;
+    cursor: pointer;
 }
 
 .playbar__nav__bar {
@@ -300,6 +344,10 @@ img {
     display: flex;
     justify-content: center;
     gap: 12px;
+}
+
+.playbar__nav__bar__bar input {
+    cursor: pointer;
 }
 
 .playbar__nav__bar__buttons {
@@ -317,6 +365,7 @@ img {
     height: 50px;
     width: 50px;
     border: solid 1px transparent;
+    cursor: pointer;
 }
 
 .playbar__nav__bar__buttons button.backward {
@@ -328,6 +377,7 @@ img {
     height: 50px;
     width: 50px;
     border: solid 1px transparent;
+    cursor: pointer;
 }
 
 .playbar__nav__bar__buttons button.play {
@@ -339,6 +389,7 @@ img {
     height: 60px;
     width: 60px;
     border: solid 1px transparent;
+    cursor: pointer;
 }
 
 .playbar__nav__bar__buttons button.forward {
@@ -350,6 +401,7 @@ img {
     height: 50px;
     width: 50px;
     border: solid 1px transparent;
+    cursor: pointer;
 }
 
 .playbar__nav__bar__buttons button.like {
@@ -361,12 +413,26 @@ img {
     height: 50px;
     width: 50px;
     border: solid 1px transparent;
+    cursor: pointer;
+}
+
+.playbar__nav__bar__buttons button {
+    transition: transform .3s ease-in, filter .2s ease-in;
+}
+
+.playbar__nav__bar__buttons button:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 10px);
 }
 
 .playbar__nav__bar__volumen {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.playbar__nav__bar__volumen input {
+    cursor: pointer;
 }
 
 .playbar__nav__bar__volumen__volumen {
@@ -378,6 +444,7 @@ img {
     height: 50px;
     width: 50px;
     border: solid 1px transparent; 
+    cursor: pointer;
 }
 
 .volumen__options {
@@ -389,5 +456,6 @@ img {
     height: 50px;
     width: 50px;
     border: solid 1px transparent;
+    cursor: pointer;
 }
 
