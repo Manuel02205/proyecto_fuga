@@ -60,7 +60,9 @@ const container = document.getElementById("track-list")
 axios.get("https://leonardoapi.onrender.com/songs")
     .then(  (res)  => {
 
-        res.date.songs.map( (song) => {
+
+        // No era "res.date", era "res.data"
+        res.data.songs.map( (song) => {
 
             const div = document.createElement("div")
             div.classList.add("song")

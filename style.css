@@ -15,7 +15,7 @@ body {
 }
 
 * {
-    font-size: 19px;
+    font-size: 1rem;
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
     list-style: none;
@@ -65,9 +65,10 @@ img {
 }
 
 .header__navbar__menu img.logo {
-    height: 65px;
-    width: 45px;
+    height: 52px;
+    /* width: 45px; */
     transition: filter .3s ease-in-out;
+    object-fit: contain;
 }
 
 .header__navbar__menu img.logo:hover {
@@ -95,9 +96,10 @@ img {
     border: solid 3px var(--color-lighgreen);
     padding: 9px 17px;
     color: var(--color-white);
+    min-width: 500px;
     background-color: transparent;
-    height: 51px;
-    width: 650px;
+    /* height: 51px;
+    width: 650px; */
     border-radius: 25px;
 }
 
@@ -124,8 +126,8 @@ img {
 .header__navbar__user {
     border: solid 3px var(--color-lighgreen);
     border-radius: 50%;
-    height: 56px;
-    width: 56px;
+    height: 52px;
+    width: 52px;
     cursor: pointer;
     transition: transform .4s ease-in-out;
 }
@@ -139,7 +141,16 @@ img {
     justify-content: center;
     padding: 23px;
     gap: 20px;
+    width: 100%;
 }
+
+
+
+/* Esto es para que la segunda sección crezca hasta ocupar el espacio que necesita, eso evita los espacio vacíos de los lados */
+.main section:nth-child(2) {
+    flex-grow: 1;
+}
+/* ----------------------------------------------------------- */
 
 .main__nav {
     display: flex;
@@ -152,23 +163,24 @@ img {
     flex-direction: column;
     gap: 35px;
     background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2));
-    padding: 45px 25px;
+    padding: 32px;
     border-radius: 10px;
 }
 
 .main__nav__home__elements {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
 }
 
 .main__nav__home__elements img {
-    height: 33px;
+    height: 32px;
 }
 
 .main__nav__home__elements h3 {
     transition: filter .3s ease-in-out;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .main__nav__home__elements h3:hover {
@@ -180,7 +192,7 @@ img {
     flex-direction: column;
     gap: 24px;
     background-image: linear-gradient(-86deg, var(--color-blackdeg1), var(--color-blackdeg2));
-    padding: 37px 21px;
+    padding: 24px;
     border-radius: 10px;
 }
 
@@ -297,6 +309,15 @@ img {
     display: flex;
     gap: 10px;
 }
+
+
+/* Uso el posicionamiento de cajas para que la barra de reproducción se quede fija en la pantalla */
+footer {
+    position: sticky;
+    bottom: 0;
+}
+/* --------------------------------------------------------- */
+
 
 .playbar__nav {
     display: flex;
