@@ -69,7 +69,6 @@ axios.get("https://leonardoapi.onrender.com/songs")
             div.innerHTML = `
                 <img src="${song.path.front}" alt="">
                 <p>${song.title}</p>
-                <button></button>
             `
             container.appendChild(div)
         }   )

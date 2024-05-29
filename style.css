@@ -232,6 +232,7 @@ img {
 #track-list img {
     border-radius: 10px;
     cursor: pointer;
+    transition: background-image .3s ease-in-out;
 }
 
 #track-list p {
@@ -241,13 +242,15 @@ img {
 .song {
     display: flex;
     gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    transition: transform .3s ease-in-out;
+    align-items: start;
+    transition: transform .3s ease-in-out, background-color .3s ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .song:hover {
     transform: scale(1.05);
+    background-color: var(--color-darkgreen);
 }
 
 .song button {
