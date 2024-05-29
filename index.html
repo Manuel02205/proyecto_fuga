@@ -59,10 +59,7 @@
                         <button></button>
                     </div>
                     <div id="track-list">
-                        <div class="song">
-                            <img src="" alt="">
-                            <p></p>
-                        </div>
+                        
                     </div>
                 </div>    
             </nav>
@@ -144,25 +141,28 @@
     <footer>
         <nav class="playbar__nav">
             <div class="playbar__nav__song">
-                <img src="/Assets/img/telepatia.jpg" alt="Song cover">
+                <img src="/Assets/img/telepatia.jpg" alt="Song cover" id="current-song-img">
                 <div class="card__text">
-                    <p>Telepatia</p>
-                    <p>Kali Uchis</p>
+                    <p id="current-song-title">Telepatia</p>
+                    <p id="current-song-author">Kali Uchis</p>
                 </div>
                 <button></button>
             </div>
             <div class="playbar__nav__bar">
-                <div class="playbar__nav__bar__bar">
+                <!-- <div class="playbar__nav__bar__bar">
                     <p>0:29</p>
                     <form action="">
                         <input type="radio" name="bar" id="bar">
                     </form>
                     <p>2:50</p>
+                </div> -->
+                <div>
+                    <audio src="" autoplay id="current-song-audio"></audio>
                 </div>
                 <div class="playbar__nav__bar__buttons">
                     <button class="unlike"></button>
                     <button class="backward"></button>
-                    <button class="play"></button>
+                    <button class="play" id="play-button"></button>
                     <button class="forward"></button>
                     <button class="like"></button>
                 </div>

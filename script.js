@@ -68,11 +68,40 @@ axios.get("https://leonardoapi.onrender.com/songs")
             div.classList.add("song")
             div.innerHTML = `
                 <img src="${song.path.front}" alt="">
+                <div>
                 <p>${song.title}</p>
+                <p class="p__author">${song.author}</p>
+                </div>
             `
+
+            div.addEventListener("click", () => {
+
+                document.getElementById("current-song-title").innerHTML = song.title
+                document.getElementById("current-song-author").innerHTML = song.author
+
+                document.getElementById("current-song-img").setAttribute("src", song.path.front)
+                document.getElementById("current-song-audio").setAttribute("src", song.path.audio)
+
+            })
+
             container.appendChild(div)
         }   )
 
+                
+
+            document.getElementById("play-button").addEventListener("click", () => {
+
+                const audio = document.getElementById("current-song-audio")
+                    if (audio.paused) {
+                        audio.play()
+                    } else {
+                        audio.pause()
+                    }
+            })
             
     }   )
+
+
+
+
     
