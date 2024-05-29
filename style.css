@@ -225,19 +225,13 @@ img {
 #track-list {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     padding: 10px 10px 10px 25px;
 }
 
 #track-list img {
     border-radius: 10px;
-    transition: box-shadow .3s ease-in, transform .3s ease-in;
     cursor: pointer;
-}
-
-#track-list img:hover {
-    box-shadow: 0px 0px 20px #f2f2f2b1;
-    transform: scale(1.05);
 }
 
 #track-list p {
@@ -248,6 +242,12 @@ img {
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
+    transition: transform .3s ease-in-out;
+}
+
+.song:hover {
+    transform: scale(1.05);
 }
 
 .song button {
